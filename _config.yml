@@ -91,15 +91,13 @@ people:
     # - title: twitter
     #   url: #
 
-- name: Fuad Huda
-  pic: fuadh
+- name: Shaoyan Zou
+  pic: 5
   position: member
-  url: http://publictransportresearchgroup.info/our-team/research-students/fuad-huda/
+  url: http://publictransportresearchgroup.info/our-team/research-students/
   social:
   - title: linkedin
-    url: https://www.linkedin.com/in/fuad-yasin-huda-39105538/
-  - title: university
-    url: https://scholar.google.co.uk/citations?user=CykERRoAAAAJ&hl=en
+    url: https://www.linkedin.com/in/shaoyan-zou-479650273/
 
 - name: Kathy Lazanas
   pic: 5
