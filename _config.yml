@@ -1,202 +1,160 @@
-url: https://atrforum.github.io/transport_research_committee
+url: https://atrforum.github.io/behavioural_insights_group
 baseurl:
 
 # Site settings
-title: PTRC
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: ATRF-BIG
+email: # TODO: chair contact email
+description: "The ATRF Behavioural Insights Group (BIG) is a standing group of the Australasian Transport Research Forum, bringing together researchers, practitioners and industry leaders to promote behavioural insights research in Australia and New Zealand and to support its application in transport."
 
 
 research_needs:
+- text: A list of behavioural-insights research needs is being compiled by the Research Coordinators — coming soon.
+  url: "#"
 - text: Suggest a research need we are missing!
-  url: https://docs.google.com/forms/d/e/1FAIpQLSc1NWF3mpvbUERh4D35tg2ATgEzn6J4xQX_m-lU484E-tSjAQ/viewform
-- text: An ongoing list of research needs suggested by interested parties (researchers, consultants, users, the public etc)
-  url: #
-- text: An annual survey of authorities responsible for operating and planning public transport in Australasia
-  url: #
+  url: https://qualtricsxm6hzf9gpzn.qualtrics.com/jfe/form/SV_0J04rqCvK5SmDki
 
 
 # Team names, titles and social links
 leadership:
-- name: Graham Currie
-  pic: 1
-  position: Chair
-  url: #
-  social:
-    # - title: twitter
-    #   url: #
-    # - title: facebook
-    #   url: #
-    # - title: stack-overflow
-    #   url: #
-
-- name: Subeh Chowdhury
-  pic: 3
-  position: Co-vice chair
-  url: #
-  social:
-    # - title: twitter
-    #   url: #
-
-- name: Pedro Camargo
-  pic: 2
-  position: Co-vice chair
-  url: https://www.xl-optim.com/
+- name: Kate Mackay
+  pic: placeholder
+  position: Co-Chair
+  url: "#"
   social:
 
-    - title: briefcase
-      url: https://www.outerloop.io/
-    - title: linkedin
-      url: https://www.linkedin.com/in/pedrocamargo/
-
-- name: James Reynolds
-  pic: 4
-  position: Secretary
+- name: Liz Ampt
+  pic: placeholder
+  position: Co-Chair
+  url: "#"
   social:
-    # - title: twitter
-    #   url: #
+
+- name: Justine Smith
+  pic: placeholder
+  position: Research Coordinator
+  url: "#"
+  social:
+
+- name: Yuting Zhang
+  pic: placeholder
+  position: Research Coordinator
+  url: "#"
+  social:
+
+- name: Alex Iljin
+  pic: placeholder
+  position: Events Coordinator
+  url: "#"
+  social:
+
+- name: Leonie Gibbons
+  pic: placeholder
+  position: Events Coordinator
+  url: "#"
+  social:
 
 people:
-- name: Hamish Barnet
-  pic: hamish
+- name: Abhishek Sanjeev Gavande
+  pic: placeholder
   position: member
   social:
-    # - title: twitter
-    #   url: #
 
-- name: Lorelei Schmitt
-  pic: lorelei
+- name: Andrew Allen
+  pic: placeholder
   position: member
   social:
-    - title: linkedin
-      url: https://www.linkedin.com/in/lorelei-schmitt-09760715
-    - title: briefcase
-      url: https://www.nzta.govt.nz/walking-cycling-and-public-transport/public-transport/public-transport-framework/integrated-planning-and-design/public-transport-design-guidance/
 
-- name: Paraic Carrol
-  pic: paraic
+- name: Adri van der Mescht
+  pic: placeholder
   position: member
   social:
-    - title: briefcase
-      url: https://findanexpert.unimelb.edu.au/profile/1097654-paraic-carroll
-    # - title: facebook
-    #   url: #
-    # - title: google-plus
-    #   url: #
 
-- name: Euan Brown
-  pic: euan
+- name: Ashikur Rahman
+  pic: placeholder
   position: member
   social:
-    # - title: twitter
-    #   url: #
 
-- name: Shaoyan Zou
-  pic: 5
+- name: Ben Kent
+  pic: placeholder
   position: member
-  url: http://publictransportresearchgroup.info/our-team/research-students/
   social:
-  - title: linkedin
-    url: https://www.linkedin.com/in/shaoyan-zou-479650273/
 
-- name: Kathy Lazanas
-  pic: 5
+- name: Ben Kraal
+  pic: placeholder
   position: member
   social:
-    # - title: twitter
-    #   url: #
 
-- name: John Nelson
-  pic: 5
+- name: Elizabeth Claridge
+  pic: placeholder
   position: member
   social:
-    # - title: twitter
-    #   url: #
 
-- name: Peter Newman
-  pic: peternewman
+- name: Emily Moylan
+  pic: placeholder
   position: member
-  url: https://en.wikipedia.org/wiki/Peter_Newman_(environmental_scientist)
   social:
-    # - title: twitter
-    #   url: #
 
-- name: Brendan O'Keeffe
-  pic: brendan
+- name: Hormoz Marzbani
+  pic: placeholder
   position: member
   social:
-    # - title: google-plus
-    #   url: #
 
-- name: Mark O'Reilly
-  pic: 5
+- name: James Edwards
+  pic: placeholder
   position: member
   social:
-    # - title: facebook
-    #   url: #
 
-- name: Sekhar Somenahalli
-  pic: sekhar
-  position: member
-  url: https://people.unisa.edu.au/sekhar.somenahalli
-  social:
-  - title: linkedin
-    url: https://people.unisa.edu.au/sekhar.somenahalli
-- name: Ian Wallis
-  pic: 5
+- name: Jan Zill
+  pic: placeholder
   position: member
   social:
-    # - title: twitter
-    #   url: #
-    # - title: facebook
-    #   url: #
-    # - title: google-plus
-    #   url: #
-- name: Adrian Webb
-  pic: adrian
+
+- name: Kim Brady
+  pic: placeholder
   position: member
   social:
-    # - title: twitter
-    #   url: #
-- name: Ian Woodcock
-  pic: ian
+
+- name: Lindsay Oxlad
+  pic: placeholder
   position: member
   social:
-    # - title: twitter
-    #   url: #
+
+- name: Louise Baker
+  pic: placeholder
+  position: member
+  social:
+
+- name: Patricia Sauri Lavieri
+  pic: placeholder
+  position: member
+  social:
+
+- name: Sam Taylor
+  pic: placeholder
+  position: member
+  social:
+
+- name: Steve Greaves
+  pic: placeholder
+  position: member
+  social:
+
+- name: Tony Brennand
+  pic: placeholder
+  position: member
+  social:
 
 resources:
   databases:
-  - name: Public Transport Research Paper Database of the Australasian Transport Research Form (since 1975)
-    url: https://australasiantransportresearchforum.org.au/papers/?sdata=public+transport
-  - name: The World Transit Research Clearinghouse
-    url: https://www.worldtransitresearch.info/
-  - name: Publication Library of the US Transit Cooperative Research Program (TCRP)
-    url: https://nap.nationalacademies.org/author/TCRP/transportation-research-board/transit-cooperative-research-program
-  - name: Public Transport Research Reports of the NZ Transport Agency (Waka Kotahi)
-    url: https://www.nzta.govt.nz/walking-cycling-and-public-transport/public-transport/planning-and-investing-in-public-transport/public-transport-research
-  - name: PTRC live list of public transport data resources
-    url: https://docs.google.com/spreadsheets/d/1E-M-SUzQu0D6BE9kniDRaitEbBuDDyieQpqCzVS3rOs/edit?gid=0#gid=0
 
   podcasts:
-  - name: Researching Transit
-    url: http://publictransportresearchgroup.info/home-creative/podcast/
-  - name: The Overhead Wire
-    url: https://theoverheadwire.com/
-  - name: Transit Unplugged
-    url: https://www.transitunplugged.com/
-  - name: "Between The Lines: A Metrolinx Podcast"
-    url: https://podcasts.apple.com/us/podcast/between-the-lines-a-metrolinx-podcast/id1593439320
 
   anz_research_centres:
-  - name: TRC (University of Auckland)
-    url: https://www.auckland.ac.nz/en/engineering/our-research/discover/research-areas-and-facilities/transportation.html
-  - name: Public Transport Research Group (Monash University)
-    url: http://publictransportresearchgroup.info/
-  - name: Institute of Transport and Logistics Studies (Sydney University)
-    url: https://www.sydney.edu.au/business/our-research/institute-of-transport-and-logistics-studies.html
-    
+
   other:
+  - name: "Behavioral Insights — Hallsworth & Kirkman (MIT Press)"
+    url: https://direct.mit.edu/books/book/4876/Behavioral-Insights
+  - name: Become an ATRF member (free)
+    url: https://australasiantransportresearchforum.org.au/become-a-member/
 
 
 upcoming_events:
@@ -205,43 +163,29 @@ upcoming_events:
     date: 24-26 Nov 2026
     url: https://atrf2026.org/
 
-  - name: GETTING AROUND --> Young people's perspectives on Public Transport
-    location: Online
-    date: 21 April 2026 2:00 p.m. AEST | 4:00 p.m. NZST
-    url: https://monash.zoom.us/webinar/register/WN_jEJY0r3MQC-9sKKBX8Y3mQ#/registration
+  - name: BIG Monthly Meeting (June) — Guest speaker BIT Australia
+    location: Online (Teams)
+    date: June 2026 (TBC)
+    url: "#"
 
 
 past_webinars:
 
-  - name: Integrating Micromobility into Public Transport Networks - Lessons and Innovations
-    url: https://youtu.be/UZUtFxQkjA0
-    description: From e-bikes and e-scooters to smarter first- and last-mile hubs, this webinar shares real-world lessons and innovations on integrating micromobility into bus and rail networks to enhance accessibility, coverage, and ridership.
-    presentations: assets/micromobility_1125.zip
+  - name: Qualitative Research Methods to Generate Behavioural Insights
+    url: "#"
+    description: "Ben Kraal (HCL, formerly Simplicit) presented on the use of qualitative research methods to generate behavioural insights. Hosted by the ATRF Behavioural Insights Group on 6 May 2026."
 
-  - name: A Gendered Perspective on Personal Safety and Security for PT Journeys
-    url: https://youtu.be/yl9lFz_uuD4
-    description: Public transportation is a vital part of daily life, but safety concerns impact individuals differently based on gender. A GENDERED PERSPECTIVE ON PERSONAL SAFETY AND SECURITY FOR PUBLIC TRANSPORTATION JOURNEYS is a thought-provoking webinar that explores these disparities, uncovering real challenges and actionable solutions. Join the experts as we discuss how to create safer, more inclusive transit experiences for everyone. Through data-driven insights and firsthand perspectives, this session will highlight the steps needed to improve security, develop strategies and reporting of harassment incidences in public transportation. Whether you are a researcher, a transportation professional, or a policy maker, this webinar will equip you with the knowledge to drive meaningful change. Don't miss this opportunity to be part of the conversation—join us and help shape the future of safer public transport journeys. The webinar will be hosted by Dr Subeh Chowdhury, Senior Lecturer at the University of Auckland. The panellist includes Dr Rumana Sarker, Research Fellow at Monash University, Alicia Trost, Chief Communications Officer at the San Francisco Bay Area Rapid Transit District (BART) and Kirsten Tilleman, PhD student at the University of Auckland.
-    presentations: assets/a_gendered_perspective_pt_journeys.zip
-
-  - name: Webinar On-Demand Public Transport in Australia and New Zealand
-    url: https://www.youtube.com/watch?v=LKLP65cJL1w
-    description: This webinar explores the role of on-demand public transport in Australia and New Zealand. It discusses several case studies with examples from successful public transport operators.
-
-  - name: Trackless Trams - a New Mid-Tier Transit System
-    url: https://www.youtube.com/watch?v=_sZ4xpqvIhg
-    description: The need for mid-tier transit in Australasian cities is growing as we recognise the role that can be played as a high-capacity connector down main roads and an enabler of urban regeneration around station precincts. This is part of the global process described as a Movement and Place Strategy which was started by TfL. Added to this is the new dimension of net zero. The Webinar will build on a research project at Curtin that has worked with communities, local governments, state agencies and industry (including Stantec) across Australasia, to help better define what can be done to create a Transit Activated Corridor (TAC) or a Net Zero Corridor (NZC). It is globally significant work that has been recognised by groups like the World Economic Forum and the UNFCCC in Sharm El Sheikh at COP 27. Videos, academic papers, industry reports and media have all helped to present the perspective of the three presenters and there has been considerable debate as the concept was applied to Townsville, Liverpool (Syd), Wyndham (Melb), Perth and Bunbury. Two trackless trams are due to arrive in Australia for testing in August and new opportunities are emerging for their application.
-
-  - name: ACADEMICS SUPPORTING ADVOCATES - improving effective collaboration
-    url: https://www.youtube.com/watch?v=zbm0bgm2U1c
-    description: Many researchers are comfortable assuming the role of advocate. However, this isn`t always possible with constraints often imposed by institutions, funding arrangements or the need to maintain relationships with key stakeholders. Building relationships between academics and advocates can ensure that research, ideas, and findings can reach a broader audience. In this webinar we will explore the role that researchers and academics can play to support public transport advocates to encourage change and build support for new policies or investment, including understanding advocacy and resource limitations, opportunities for research and researchers to support advocacy, and working together to drive change
+  - name: Behavioural Change Initiatives at RAC — Community Impact
+    url: "#"
+    description: "Ben Kent (RAC WA) presented on behavioural change initiatives being implemented by RAC. Hosted by the ATRF Behavioural Insights Group on 1 April 2026."
 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: linkedin
-    url: https://www.linkedin.com/groups/14237600/
+    url: "#"  # TODO: BIG LinkedIn group URL
   - title: github
-    url: https://github.com/atrforum/pt_research_committee
+    url: "#"  # TODO: site repo URL once created
 
 # Build settings
 markdown: kramdown
