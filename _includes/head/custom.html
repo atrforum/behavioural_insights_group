@@ -1,0 +1,10 @@
+{% comment %}
+  Local override of MM's head/custom.html.
+  Inject favicons (modern minimal set) and the PWA manifest link.
+{% endcomment %}
+
+<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
+<link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+<meta name="theme-color" content="#0e4c8c">
