@@ -8,7 +8,7 @@ description: "The ATRF Behavioural Insights Group (BIG) is a standing group of t
 
 # --- Minimal Mistakes (remote theme) ---
 remote_theme: mmistakes/minimal-mistakes@4.26.2
-minimal_mistakes_skin: dark
+minimal_mistakes_skin: air # dark, air, mint, sunrise, aqua, contrast, neon
 masthead_title: " "  # blank so the page title doesn't double up next to nav
 search: false
 
