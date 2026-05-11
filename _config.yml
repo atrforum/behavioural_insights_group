@@ -44,7 +44,6 @@ social:
 markdown: kramdown
 permalink: pretty
 
-# Don't process the legacy custom theme dirs as content
 exclude:
   - Gemfile
   - Gemfile.lock

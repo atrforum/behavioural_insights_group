@@ -9,7 +9,3 @@ gem "webrick", "~> 1.8"
 gem "jekyll-remote-theme"
 gem "jekyll-feed"
 gem "jekyll-include-cache"
-
-# Legacy (kept while the old Agency theme files remain in the repo;
-# can be removed once the *-legacy.* files are deleted)
-gem "jekyll-agency"
