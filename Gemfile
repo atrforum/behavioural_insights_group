@@ -2,10 +2,10 @@
 
 source "https://rubygems.org"
 
-# gem "rails"
-
-gem "jekyll-agency"
-
 gem "jekyll", "~> 4.3"
-
 gem "webrick", "~> 1.8"
+
+# Theme: Minimal Mistakes via remote theme
+gem "jekyll-remote-theme"
+gem "jekyll-feed"
+gem "jekyll-include-cache"

@@ -1,0 +1,172 @@
+---
+# Custom MM stylesheet — overrides come after the imports below.
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* ============================================================
+   Brand colour
+   ============================================================ */
+
+$atrf-blue:       #0e4c8c; // sampled from img/ATRF_logo_large.png
+$atrf-blue-dark:  #0a3a6b; // hover/active
+$atrf-blue-soft:  #e6eef7; // tint for subtle backgrounds
+
+
+/* ============================================================
+   Body section headings — ATRF blue on light skin background
+   The hero `.page__title` stays white because it sits on the blue overlay.
+   ============================================================ */
+
+.page__content {
+  h1, h2, h3, h4 { color: $atrf-blue; }
+}
+
+
+/* ============================================================
+   Easy win 1: re-skin links, buttons, nav active state to ATRF blue
+   ============================================================ */
+
+.page__content a:not(.btn) {
+  color: $atrf-blue;
+  &:hover, &:focus { color: $atrf-blue-dark; }
+}
+
+.greedy-nav .visible-links a:before {        // MM uses a coloured under-bar on hover
+  background: $atrf-blue !important;
+}
+.greedy-nav .visible-links a:hover,
+.greedy-nav .visible-links a.active {
+  color: $atrf-blue;
+}
+
+// MM splash actions are outline-white on the hero — keep that for contrast.
+// But re-tint generic body buttons.
+.btn--primary {
+  background-color: $atrf-blue;
+  border-color: $atrf-blue;
+  color: #fff;
+  &:hover, &:focus {
+    background-color: $atrf-blue-dark;
+    border-color: $atrf-blue-dark;
+  }
+}
+
+
+/* ============================================================
+   Easy win 2: thin ATRF-blue accent strip across the top of the page
+   ============================================================ */
+
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: $atrf-blue;
+  z-index: 1000;       // above the masthead
+  pointer-events: none;
+}
+.masthead { margin-top: 4px; }   // push the masthead down so the strip isn't covered
+
+
+/* ============================================================
+   Easy win 3: bigger, bolder hero title
+   ============================================================ */
+
+.page__hero,
+.page__hero--overlay {
+  .page__title {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+  .page__lead { font-size: 1.15rem; }
+}
+
+@media (min-width: 768px) {
+  .page__hero,
+  .page__hero--overlay {
+    .page__title { font-size: 4rem; }
+    .page__lead  { font-size: 1.35rem; }
+  }
+}
+
+@media (min-width: 1200px) {
+  .page__hero,
+  .page__hero--overlay {
+    .page__title { font-size: 5rem; }
+  }
+}
+
+
+/* ============================================================
+   Easy win 4: ATRF-blue footer with white text
+   ============================================================ */
+
+.page__footer {
+  background-color: $atrf-blue;
+  color: #ffffff;
+
+  a {
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    &:hover, &:focus { color: $atrf-blue-soft; text-decoration: none; }
+  }
+
+  // MM social icon row in the footer
+  .social-icons .fas,
+  .social-icons .fab,
+  .social-icons .far,
+  .social-icons .fa { color: #ffffff; }
+
+  .page__footer-copyright,
+  .page__footer-follow .social-icons a:hover { color: rgba(255, 255, 255, 0.85); }
+}
+
+
+/* ============================================================
+   Masthead: dual-logo brand (BIG + ATRF) on the left of the nav
+   ============================================================ */
+
+.site-logo.site-logo--multi {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 4px 0;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+
+.site-logo__img {
+  display: block;
+  width: auto;
+  max-width: none;
+  height: 44px;
+}
+
+@media (max-width: 600px) {
+  .site-logo__img { height: 32px; }
+  .site-logo.site-logo--multi { gap: 8px; margin-right: 12px; }
+}
+
+/* Easy win 5: drop the white card around the BIG logo.
+   Both logos are now dark-on-light and sit on the air skin's white masthead. */
+.site-logo__sep {
+  display: inline-block;
+  width: 1px;
+  height: 28px;
+  background: rgba(0, 0, 0, 0.15);   // dark on white masthead
+}
+
+@media (max-width: 600px) {
+  .site-logo__sep { height: 20px; }
+}

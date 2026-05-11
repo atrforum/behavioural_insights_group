@@ -9,6 +9,9 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 
+# WSL/NTFS Mark-of-the-Web sidecars
+*:Zone.Identifier
+
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 

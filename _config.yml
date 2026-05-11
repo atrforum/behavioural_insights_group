@@ -1,192 +1,52 @@
-url: https://atrforum.github.io/behavioural_insights_group
-baseurl:
+url: https://janzill.github.io
+baseurl: /atrf_bi_website
 
-# Site settings
+# Site identity
 title: ATRF-BIG
 email: # TODO: chair contact email
 description: "The ATRF Behavioural Insights Group (BIG) is a standing group of the Australasian Transport Research Forum, bringing together researchers, practitioners and industry leaders to promote behavioural insights research in Australia and New Zealand and to support its application in transport."
 
+# --- Minimal Mistakes (remote theme) ---
+remote_theme: mmistakes/minimal-mistakes@4.26.2
+minimal_mistakes_skin: contrast # dark, air, mint, sunrise, aqua, contrast, neon
+masthead_title: " "  # blank so the page title doesn't double up next to nav
+search: false
 
-research_needs:
-- text: A list of behavioural-insights research needs is being compiled by the Research Coordinators — coming soon.
-  url: "#"
-- text: Suggest a research need we are missing!
-  url: https://qualtricsxm6hzf9gpzn.qualtrics.com/jfe/form/SV_0J04rqCvK5SmDki
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+  - jekyll-include-cache
 
+defaults:
+  - scope: { path: "" }
+    values:
+      author_profile: false
+      show_date: false
 
-# Team names, titles and social links
-leadership:
-- name: Kate Mackay
-  pic: placeholder
-  position: Co-Chair
-  url: "#"
-  social:
+# Footer social icons
+footer:
+  links:
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/groups/18327006
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/janzill/atrf_bi_website
 
-- name: Liz Ampt
-  pic: placeholder
-  position: Co-Chair
-  url: "#"
-  social:
-
-- name: Justine Smith
-  pic: placeholder
-  position: Research Coordinator
-  url: "#"
-  social:
-
-- name: Yuting Zhang
-  pic: placeholder
-  position: Research Coordinator
-  url: "#"
-  social:
-
-- name: Alex Iljin
-  pic: placeholder
-  position: Events Coordinator
-  url: "#"
-  social:
-
-- name: Leonie Gibbons
-  pic: placeholder
-  position: Events Coordinator
-  url: "#"
-  social:
-
-people:
-- name: Abhishek Sanjeev Gavande
-  pic: placeholder
-  position: member
-  social:
-
-- name: Andrew Allen
-  pic: placeholder
-  position: member
-  social:
-
-- name: Adri van der Mescht
-  pic: placeholder
-  position: member
-  social:
-
-- name: Ashikur Rahman
-  pic: placeholder
-  position: member
-  social:
-
-- name: Ben Kent
-  pic: placeholder
-  position: member
-  social:
-
-- name: Ben Kraal
-  pic: placeholder
-  position: member
-  social:
-
-- name: Elizabeth Claridge
-  pic: placeholder
-  position: member
-  social:
-
-- name: Emily Moylan
-  pic: placeholder
-  position: member
-  social:
-
-- name: Hormoz Marzbani
-  pic: placeholder
-  position: member
-  social:
-
-- name: James Edwards
-  pic: placeholder
-  position: member
-  social:
-
-- name: Jan Zill
-  pic: placeholder
-  position: member
-  social:
-
-- name: Kim Brady
-  pic: placeholder
-  position: member
-  social:
-
-- name: Lindsay Oxlad
-  pic: placeholder
-  position: member
-  social:
-
-- name: Louise Baker
-  pic: placeholder
-  position: member
-  social:
-
-- name: Patricia Sauri Lavieri
-  pic: placeholder
-  position: member
-  social:
-
-- name: Sam Taylor
-  pic: placeholder
-  position: member
-  social:
-
-- name: Steve Greaves
-  pic: placeholder
-  position: member
-  social:
-
-- name: Tony Brennand
-  pic: placeholder
-  position: member
-  social:
-
-resources:
-  databases:
-
-  podcasts:
-
-  anz_research_centres:
-
-  other:
-  - name: "Behavioral Insights — Hallsworth & Kirkman (MIT Press)"
-    url: https://direct.mit.edu/books/book/4876/Behavioral-Insights
-  - name: Become an ATRF member (free)
-    url: https://australasiantransportresearchforum.org.au/become-a-member/
-
-
-upcoming_events:
-  - name: 47th ATRF
-    location: Sydney
-    date: 24-26 Nov 2026
-    url: https://atrf2026.org/
-
-  - name: BIG Monthly Meeting (June) — Guest speaker BIT Australia
-    location: Online (Teams)
-    date: June 2026 (TBC)
-    url: "#"
-
-
-past_webinars:
-
-  - name: Qualitative Research Methods to Generate Behavioural Insights
-    url: "#"
-    description: "Ben Kraal (HCL, formerly Simplicit) presented on the use of qualitative research methods to generate behavioural insights. Hosted by the ATRF Behavioural Insights Group on 6 May 2026."
-
-  - name: Behavioural Change Initiatives at RAC — Community Impact
-    url: "#"
-    description: "Ben Kent (RAC WA) presented on behavioural change initiatives being implemented by RAC. Hosted by the ATRF Behavioural Insights Group on 1 April 2026."
-
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Top-level social fallback (used elsewhere)
 social:
   - title: linkedin
-    url: "#"  # TODO: BIG LinkedIn group URL
+    url: https://www.linkedin.com/groups/18327006
   - title: github
-    url: "#"  # TODO: site repo URL once created
+    url: https://github.com/janzill/atrf_bi_website
 
-# Build settings
+# --- Build settings ---
 markdown: kramdown
 permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - README.md
+  - LICENSE
