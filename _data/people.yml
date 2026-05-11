@@ -2,11 +2,19 @@
   pic: placeholder
   position: member
 
-- name: Andrew Allen
+- name: Adri van der Mescht
   pic: placeholder
   position: member
 
-- name: Adri van der Mescht
+- name: Akshay Vij
+  pic: placeholder
+  position: member
+
+- name: Andrew Allan
+  pic: placeholder
+  position: member
+
+- name: Anna Sunter
   pic: placeholder
   position: member
 
@@ -46,11 +54,11 @@
   pic: placeholder
   position: member
 
-- name: Lindsay Oxlad
+- name: Louise Baker
   pic: placeholder
   position: member
 
-- name: Louise Baker
+- name: Mark Davis
   pic: placeholder
   position: member
 
@@ -62,10 +70,23 @@
   pic: placeholder
   position: member
 
-- name: Steve Greaves
+- name: Stephen Greaves
+  pic: placeholder
+  position: member
+
+- name: Taha Rashidi
   pic: placeholder
   position: member
 
 - name: Tony Brennand
   pic: placeholder
   position: member
+
+- name: Virginie Vernin
+  pic: placeholder
+  position: member
+
+
+# - name: Lindsay Oxlad
+#   pic: placeholder
+#   position: member
