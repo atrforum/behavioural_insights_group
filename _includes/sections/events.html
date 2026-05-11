@@ -1,0 +1,33 @@
+<section id="events">
+  <h2>Events</h2>
+  <p>Industry and academic events related to behavioural insights in transport.</p>
+
+  <h3>Upcoming events</h3>
+  <ul>
+    {% for ev in site.data.events.upcoming %}
+      <li>
+        {% if ev.url and ev.url != "#" %}
+          <a href="{{ ev.url }}" target="_blank" rel="noopener noreferrer"><strong>{{ ev.name }}</strong></a>
+        {% else %}
+          <strong>{{ ev.name }}</strong>
+        {% endif %}
+        <br>
+        <em>{{ ev.location }} &middot; {{ ev.date }}</em>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h3>Past presentations</h3>
+  <ul>
+    {% for p in site.data.events.past %}
+      <li>
+        {% if p.url and p.url != "#" %}
+          <a href="{{ p.url }}" target="_blank" rel="noopener noreferrer"><strong>{{ p.name }}</strong></a>
+        {% else %}
+          <strong>{{ p.name }}</strong>
+        {% endif %}
+        {% if p.description %}<br>{{ p.description }}{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>

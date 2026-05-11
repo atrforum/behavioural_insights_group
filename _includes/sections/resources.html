@@ -1,0 +1,19 @@
+<section id="resources">
+  <h2>Resources</h2>
+  <p>Online resources for behavioural insights in transport.</p>
+
+  {% assign cats = "databases,podcasts,anz_research_centres,other" | split: "," %}
+  {% assign labels = "Databases,Podcasts,ANZ Research Centres,Other" | split: "," %}
+
+  {% for cat in cats %}
+    {% assign items = site.data.resources[cat] %}
+    {% if items and items.size > 0 %}
+      <h3>{{ labels[forloop.index0] }}</h3>
+      <ul>
+        {% for item in items %}
+          <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endfor %}
+</section>

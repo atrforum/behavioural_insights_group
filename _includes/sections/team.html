@@ -1,0 +1,50 @@
+<section id="team">
+  <h2>Team</h2>
+
+  <h3>Leadership</h3>
+  <ul class="team-grid">
+    {% for m in site.data.leadership %}
+      <li class="team-grid__item">
+        <img src="{{ '/img/team/' | append: m.pic | append: '.jpg' | relative_url }}" alt="{{ m.name }}">
+        <div class="team-grid__name">{{ m.name }}</div>
+        <div class="team-grid__role">{{ m.position }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h3>Committee members</h3>
+  <ul class="team-grid">
+    {% for m in site.data.people %}
+      <li class="team-grid__item">
+        <img src="{{ '/img/team/' | append: m.pic | append: '.jpg' | relative_url }}" alt="{{ m.name }}">
+        <div class="team-grid__name">{{ m.name }}</div>
+        <div class="team-grid__role">{{ m.position }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<style>
+  .team-grid {
+    list-style: none;
+    padding: 0;
+    margin: 1.5em 0 2.5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.5em;
+  }
+  .team-grid__item {
+    text-align: center;
+    font-size: 0.9em;
+  }
+  .team-grid__item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 0.6em;
+  }
+  .team-grid__name { font-weight: 600; }
+  .team-grid__role { opacity: 0.7; font-size: 0.9em; }
+</style>

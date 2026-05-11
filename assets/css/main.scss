@@ -1,0 +1,54 @@
+---
+# Custom MM stylesheet — overrides come after the imports below.
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* ============================================================
+   Masthead: dual-logo brand (BIG + ATRF) on the left of the nav
+   ============================================================ */
+
+.site-logo.site-logo--multi {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 4px 0;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+
+.site-logo__img {
+  display: block;
+  width: auto;
+  max-width: none;
+  height: 44px;
+}
+
+@media (max-width: 600px) {
+  .site-logo__img { height: 32px; }
+  .site-logo.site-logo--multi { gap: 8px; margin-right: 12px; }
+}
+
+.site-logo__img--big {
+  /* logo_1.png has a white background — give it slight rounding so the
+     white block reads as an inset card on the dark masthead */
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 4px 8px;
+  box-sizing: content-box;
+}
+
+.site-logo__sep {
+  display: inline-block;
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 600px) {
+  .site-logo__sep { height: 20px; }
+}
