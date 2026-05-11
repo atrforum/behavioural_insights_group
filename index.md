@@ -3,7 +3,7 @@ layout: splash
 permalink: /
 title: "ATRF Behavioural Insights Group"
 header:
-  overlay_color: "#0c0f12"
+  overlay_color: "#0e4c8c"  # ATRF blue (sampled from the ATRF logo)
   # overlay_image: /img/hero.jpg   # TODO: drop a hero image here when ready
   actions:
     - label: "Become a Member"
