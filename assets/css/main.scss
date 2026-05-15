@@ -73,7 +73,28 @@ body::before {
   z-index: 1000;       // above the masthead
   pointer-events: none;
 }
-.masthead { margin-top: 4px; }   // push the masthead down so the strip isn't covered
+// .masthead { margin-top: 4px; }   // push the masthead down so the strip isn't covered
+// not needed while .preview-banner is active, which sits in normal flow at  the top of
+ // the document, so the masthead is pushed down naturally.
+
+/* ============================================================
+   Preview / pre-approval banner
+   TODO: Remove this block (and the .preview-banner div in _includes/masthead.html) once
+   the site is official.
+   Also add the .masthead{ margin-top: 4px; } above back in.
+   ============================================================ */
+
+.preview-banner {
+  background: #fff3cd;          // soft amber — clearly a notice, not brand chrome
+  color: #664d03;
+  border-bottom: 1px solid #ffe69c;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 10px 12px 6px;       // extra top padding so the fixed 4px ATRF strip doesn't sit over the text
+  line-height: 1.3;
+}
 
 
 /* ============================================================
