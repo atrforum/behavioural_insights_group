@@ -44,6 +44,11 @@ social:
 markdown: kramdown
 permalink: pretty
 
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - slash-div
+
 exclude:
   - Gemfile
   - Gemfile.lock
