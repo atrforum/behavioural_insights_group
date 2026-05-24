@@ -97,6 +97,7 @@ The video below is from the PT Research Committee website. The layout of our sit
 ### Local preview
 
 ```
+bundle config set --local path vendor/bundle  # needed on some Linux setups to avoid system gem permission errors
 bundle install
 bundle exec jekyll serve
 ```
