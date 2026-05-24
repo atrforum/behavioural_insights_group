@@ -102,7 +102,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Then open http://localhost:4000/atrf_bi_website/ (note the `baseurl` — the bare `http://localhost:4000/` will 404).
+Then open http://localhost:4000/behavioural_insights_group/ (note the `baseurl` — the bare `http://localhost:4000/` will 404).
 
 ### Deployment
 
