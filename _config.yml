@@ -1,5 +1,5 @@
-url: https://janzill.github.io
-baseurl: /atrf_bi_website
+url: https://atrforum.github.io
+baseurl: /behavioural_insights_group
 
 # Site identity
 title: ATRF CBI
@@ -31,14 +31,14 @@ footer:
       url: https://www.linkedin.com/groups/18327006
     - label: GitHub
       icon: fab fa-fw fa-github
-      url: https://github.com/janzill/atrf_bi_website
+      url: https://github.com/atrforum/behavioural_insights_group
 
 # Top-level social fallback (used elsewhere)
 social:
   - title: linkedin
     url: https://www.linkedin.com/groups/18327006
   - title: github
-    url: https://github.com/janzill/atrf_bi_website
+    url: https://github.com/atrforum/behavioural_insights_group
 
 # --- Build settings ---
 markdown: kramdown

@@ -117,5 +117,4 @@ The site currently advertises itself as a preview and is hidden from search engi
 - Remove the `.preview-banner` block in [assets/css/main.scss](assets/css/main.scss) and uncomment `.masthead { margin-top: 4px; }` in the same file (so the ATRF accent strip clears the masthead).
 - Remove the `<meta name="robots" content="noindex, nofollow">` line in [_includes/head/custom.html](_includes/head/custom.html).
 - Remove the preview-site blockquote at the top of this README.
-- Set the `email:` field in [_config.yml](_config.yml) and replace the `TODO: contact email` in the Editing section above.
 -->
