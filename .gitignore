@@ -1,6 +1,7 @@
 _site
 
 vendor
+.bundle/
 
 # Windows image file caches
 Thumbs.db

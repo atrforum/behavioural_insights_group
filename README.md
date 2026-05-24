@@ -1,19 +1,17 @@
-ATRF Behavioural Insights Group (BIG)
-=====================================
+ATRF Committee for Behavioural Insights (CBI)
+=============================================
 
 > **This is a preview site. Content has not been reviewed or endorsed.**
 
-
-Source for the website of the Behavioural Insights Group, a standing group of the
+Source for the website of the Committee for Behavioural Insights, a standing group of the
 [Australasian Transport Research Forum (ATRF)](https://australasiantransportresearchforum.org.au/).
-
 
 
 ## Editing
 
 There are two ways to update the site:
 
-- **The easy way — email the site coordinator.** If you'd just like your headshot added, an event listed, or any other change made on your behalf, email the details to the site coordinator (TODO: contact email) and they'll take care of it.
+- **The easy way — email the site coordinator.** If you'd just like your headshot added, an event listed, or any other change made on your behalf, email the details to the [site coordinator](mailto:jan@outerloop.io) and they'll take care of it.
 - **DIY on GitHub.** All the edits below can be made directly in your web browser through GitHub's file editor. You'll need a (free) GitHub account and to be added to this repository as a collaborator. No coding required.
 
 ### Adding your headshot
@@ -48,7 +46,7 @@ Events live in [_data/events.yml](_data/events.yml), split into two lists: `upco
 
 ```yaml
 upcoming:
-  - name: BIG Monthly Meeting (July) — Guest speaker TBC
+  - name: CBI Monthly Meeting (July) — Guest speaker TBC
     location: Online (Teams)
     date: July 2026 (TBC)
     url: "#"
@@ -60,7 +58,7 @@ upcoming:
 past:
   - name: Title of the talk
     url: "#"
-    description: "Speaker Name (Affiliation) presented on <topic>. Hosted by the ATRF Behavioural Insights Group on <date>."
+    description: "Speaker Name (Affiliation) presented on <topic>. Hosted by the ATRF Committee for Behavioural Insights on <date>."
     slides: /assets/presentations/speaker-name-talk-title.pdf   # optional — leave the line out if no slides
 ```
 
@@ -91,7 +89,7 @@ The video below is from the PT Research Committee website. The layout of our sit
 | [_data/](_data/) | Structured content driving the page sections — `people.yml`, `leadership.yml`, `events.yml`, `resources.yml`, `research_needs.yml`, `navigation.yml`. Editing these is the day-to-day way the site changes. |
 | [index.md](index.md) | The single landing page. Front matter sets the splash hero; the body just `{% include %}`s the section partials in display order. |
 | [_includes/sections/](_includes/sections/) | One HTML partial per page section (`about`, `research-needs`, `resources`, `events`, `team`). These are local — they're not part of Minimal Mistakes. |
-| [_includes/masthead.html](_includes/masthead.html), [_includes/head/custom.html](_includes/head/custom.html) | **Local overrides** of theme partials. Jekyll picks the local copy over the remote-theme copy for any same-named file under `_includes/`. The masthead override exists for the dual-logo (BIG + ATRF) layout; `head/custom.html` is MM's intentional extension point for favicons/meta tags. |
+| [_includes/masthead.html](_includes/masthead.html), [_includes/head/custom.html](_includes/head/custom.html) | **Local overrides** of theme partials. Jekyll picks the local copy over the remote-theme copy for any same-named file under `_includes/`. The masthead override exists for the dual-logo (CBI + ATRF) layout; `head/custom.html` is MM's intentional extension point for favicons/meta tags. |
 | [assets/css/main.scss](assets/css/main.scss) | The site's compiled stylesheet. Imports the theme's skin and base styles, then layers our brand-colour and component overrides on top. Has front matter (so Jekyll runs it through Liquid + Sass). |
 | [img/team/](img/team/) | Headshot JPGs. Filenames must match the `pic:` field in `_data/people.yml` / `_data/leadership.yml` (without the extension). `placeholder.jpg` is the default. |
 | [assets/presentations/](assets/presentations/) | Slide PDFs referenced from past-event entries in `_data/events.yml`. |
@@ -99,6 +97,7 @@ The video below is from the PT Research Committee website. The layout of our sit
 ### Local preview
 
 ```
+bundle config set --local path vendor/bundle  # needed on some Linux setups to avoid system gem permission errors
 bundle install
 bundle exec jekyll serve
 ```
@@ -109,13 +108,14 @@ Then open http://localhost:4000/atrf_bi_website/ (note the `baseurl` — the bar
 
 A push to `main` triggers [.github/workflows/jekyll.yml](.github/workflows/jekyll.yml), which builds with `JEKYLL_ENV=production` and deploys to GitHub Pages. Build status is visible on the repo's **Actions** tab; the deployed URL is shown on the workflow run summary.
 
+<!--
 ### Going-live checklist
 
-The site currently advertises itself as a preview and is hidden from search engines. When BIG leadership has signed off, do the following to flip it to public:
+The site currently advertises itself as a preview and is hidden from search engines. When the site is approved, do the following to flip it to public:
 
 - Remove the `.preview-banner` div in [_includes/masthead.html](_includes/masthead.html).
 - Remove the `.preview-banner` block in [assets/css/main.scss](assets/css/main.scss) and uncomment `.masthead { margin-top: 4px; }` in the same file (so the ATRF accent strip clears the masthead).
 - Remove the `<meta name="robots" content="noindex, nofollow">` line in [_includes/head/custom.html](_includes/head/custom.html).
 - Remove the preview-site blockquote at the top of this README.
 - Set the `email:` field in [_config.yml](_config.yml) and replace the `TODO: contact email` in the Editing section above.
-
+-->

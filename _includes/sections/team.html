@@ -8,6 +8,11 @@
         <img src="{{ '/img/team/' | append: m.pic | append: '.jpg' | relative_url }}" alt="{{ m.name }}">
         <div class="team-grid__name">{{ m.name }}</div>
         <div class="team-grid__role">{{ m.position }}</div>
+        {% if m.email %}
+          <a class="team-grid__email" href="mailto:{{ m.email }}" aria-label="Email {{ m.name }}">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
@@ -19,6 +24,11 @@
         <img src="{{ '/img/team/' | append: m.pic | append: '.jpg' | relative_url }}" alt="{{ m.name }}">
         <div class="team-grid__name">{{ m.name }}</div>
         <div class="team-grid__role">{{ m.position }}</div>
+        {% if m.email %}
+          <a class="team-grid__email" href="mailto:{{ m.email }}" aria-label="Email {{ m.name }}">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
@@ -47,4 +57,17 @@
   }
   .team-grid__name { font-weight: 600; }
   .team-grid__role { opacity: 0.7; font-size: 0.9em; }
+  .team-grid__email {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.45em;
+    color: inherit;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  .team-grid__email:hover,
+  .team-grid__email:focus {
+    color: #0e4c8c;
+  }
 </style>
