@@ -2,9 +2,9 @@ url: https://janzill.github.io
 baseurl: /atrf_bi_website
 
 # Site identity
-title: ATRF-BIG
+title: ATRF CBI
 email: # TODO: chair contact email
-description: "The ATRF Behavioural Insights Group (BIG) is a standing group of the Australasian Transport Research Forum, bringing together researchers, practitioners and industry leaders to promote behavioural insights research in Australia and New Zealand and to support its application in transport."
+description: "The ATRF Committee for Behavioural Insights (CBI) is a standing group of the Australasian Transport Research Forum, bringing together researchers, practitioners and industry leaders to promote behavioural insights research in Australia and New Zealand and to support its application in transport."
 
 # --- Minimal Mistakes (remote theme) ---
 remote_theme: mmistakes/minimal-mistakes@4.26.2
