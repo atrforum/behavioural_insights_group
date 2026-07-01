@@ -66,13 +66,6 @@ If you're attaching slides, upload the PDF to [assets/presentations/](assets/pre
 
 When an upcoming event has happened, simply move the entry from the `upcoming:` list down to the `past:` list and add a `description:` line.
 
-### Editing tutorial (video walkthrough)
-
-The video below is from the PT Research Committee website. The layout of our site is slightly different, but the GitHub workflow shown — editing files in the browser, committing changes — is the same.
-
-[![Editing tutorial](https://github.com/atrforum/pt_research_committee/assets/7377666/884c8b30-6f64-4a29-8c4e-7dfb7dd691b4)](https://youtu.be/-8pIQiQ1Ly0)
-
-
 ## Developer notes
 
 ### Stack
