@@ -1,8 +1,6 @@
 ATRF Committee for Behavioural Insights (CBI)
 =============================================
 
-> **This is a preview site. Content has not been reviewed or endorsed.**
-
 Source for the website of the Committee for Behavioural Insights, a standing group of the
 [Australasian Transport Research Forum (ATRF)](https://australasiantransportresearchforum.org.au/).
 
@@ -12,7 +10,9 @@ Source for the website of the Committee for Behavioural Insights, a standing gro
 There are two ways to update the site:
 
 - **The easy way — email the site coordinator.** If you'd just like your headshot added, an event listed, or any other change made on your behalf, email the details to the [site coordinator](mailto:jan@outerloop.io) and they'll take care of it.
-- **DIY on GitHub.** All the edits below can be made directly in your web browser through GitHub's file editor. You'll need a (free) GitHub account and to be added to this repository as a collaborator. No coding required.
+- **DIY on GitHub.** You'll need a (free) GitHub account. With this, there are two options: Option 1 (if you know GitHub workflows) fork the repository, make edits in your fork and open a pull request against the main repository. Option 2 is to be added to this repository as a collaborator and edit the files in this repository directly in your web browser through GitHub's file editor. For the second option, the video below from the PT Research Committee website lays out the steps in detail. The layout of our site is slightly different (see details below), but the GitHub workflow shown — editing files in the browser, committing changes — is the same.
+
+[![Editing tutorial](https://github.com/atrforum/pt_research_committee/assets/7377666/884c8b30-6f64-4a29-8c4e-7dfb7dd691b4)](https://youtu.be/-8pIQiQ1Ly0)
 
 ### Adding your headshot
 
@@ -66,13 +66,6 @@ If you're attaching slides, upload the PDF to [assets/presentations/](assets/pre
 
 When an upcoming event has happened, simply move the entry from the `upcoming:` list down to the `past:` list and add a `description:` line.
 
-### Editing tutorial (video walkthrough)
-
-The video below is from the PT Research Committee website. The layout of our site is slightly different, but the GitHub workflow shown — editing files in the browser, committing changes — is the same.
-
-[![Editing tutorial](https://github.com/atrforum/pt_research_committee/assets/7377666/884c8b30-6f64-4a29-8c4e-7dfb7dd691b4)](https://youtu.be/-8pIQiQ1Ly0)
-
-
 ## Developer notes
 
 ### Stack
@@ -107,14 +100,3 @@ Then open http://localhost:4000/behavioural_insights_group/ (note the `baseurl` 
 ### Deployment
 
 A push to `main` triggers [.github/workflows/jekyll.yml](.github/workflows/jekyll.yml), which builds with `JEKYLL_ENV=production` and deploys to GitHub Pages. Build status is visible on the repo's **Actions** tab; the deployed URL is shown on the workflow run summary.
-
-<!--
-### Going-live checklist
-
-The site currently advertises itself as a preview and is hidden from search engines. When the site is approved, do the following to flip it to public:
-
-- Remove the `.preview-banner` div in [_includes/masthead.html](_includes/masthead.html).
-- Remove the `.preview-banner` block in [assets/css/main.scss](assets/css/main.scss) and uncomment `.masthead { margin-top: 4px; }` in the same file (so the ATRF accent strip clears the masthead).
-- Remove the `<meta name="robots" content="noindex, nofollow">` line in [_includes/head/custom.html](_includes/head/custom.html).
-- Remove the preview-site blockquote at the top of this README.
--->
