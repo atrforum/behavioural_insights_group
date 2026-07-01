@@ -10,7 +10,9 @@ Source for the website of the Committee for Behavioural Insights, a standing gro
 There are two ways to update the site:
 
 - **The easy way — email the site coordinator.** If you'd just like your headshot added, an event listed, or any other change made on your behalf, email the details to the [site coordinator](mailto:jan@outerloop.io) and they'll take care of it.
-- **DIY on GitHub.** You'll need a (free) GitHub account. With this, there are two options: Option 1 (if you know GitHub workflows) fork the repository, make edits in your fork and open a pull request against the main repository. Option 2 is to be added to this repository as a collaborator and edit the files in this repository directly in your web browser through GitHub's file editor.
+- **DIY on GitHub.** You'll need a (free) GitHub account. With this, there are two options: Option 1 (if you know GitHub workflows) fork the repository, make edits in your fork and open a pull request against the main repository. Option 2 is to be added to this repository as a collaborator and edit the files in this repository directly in your web browser through GitHub's file editor. For the second option, the video below from the PT Research Committee website lays out the steps in detail. The layout of our site is slightly different (see details below), but the GitHub workflow shown — editing files in the browser, committing changes — is the same.
+
+[![Editing tutorial](https://github.com/atrforum/pt_research_committee/assets/7377666/884c8b30-6f64-4a29-8c4e-7dfb7dd691b4)](https://youtu.be/-8pIQiQ1Ly0)
 
 ### Adding your headshot
 
