@@ -1,6 +1,8 @@
 <section id="research-needs">
   <h2>Research Needs</h2>
 
+  {% assign survey = site.data.research_needs_survey %}
+
   <p>The group identified the following list of behavioural-insights research needs across Australasia:
   </p>
 
@@ -16,7 +18,10 @@
     {% endfor %}
   </ul>
 
-  <p>If you can think of any other research needs that are not listed above, please <a href="mailto:{{ site.email }}">contact us</a> and let us know.
-  </p>
+  {% if survey.url and survey.url != '#' %}
+    <p>
+      <a href="{{ survey.url }}" target="_blank" rel="noopener noreferrer">{{ survey.text | default: 'Suggest an additional research need via our public survey' }}</a>
+    </p>
+  {% endif %}
 
 </section>

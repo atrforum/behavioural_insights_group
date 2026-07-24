@@ -51,6 +51,17 @@ Leadership entries in [_data/leadership.yml](_data/leadership.yml) support a sep
 
 If you don't yet have an entry in [_data/people.yml](_data/people.yml), add one in the same shape, keeping the list in alphabetical order by first name.
 
+### Adding a research-needs survey link
+
+To add a standalone survey link beneath the Research Needs list, edit [_data/research_needs_survey.yml](_data/research_needs_survey.yml) and paste in the public respondent URL:
+
+```yaml
+text: Suggest an additional research need via our public survey
+url: https://example.com/your-public-form-link
+```
+
+Use the public response link only, not the admin or edit link.
+
 ### Adding an event
 
 Events live in [_data/events.yml](_data/events.yml), split into two lists: `upcoming:` and `past:`. Open the file and copy one of the existing entries as a template.
