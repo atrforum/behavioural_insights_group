@@ -1,43 +1,44 @@
 - name: Kate Mackay
-  pic: placeholder
-  position: Co-Chair
+  pic: KateMackay
+  committee_role: Co-Chair
+  position: Arup
   email: kate.mackay@arup.com
-  url: "#"
-  social:
+  url: https://www.linkedin.com/in/katemackaytransport
 
 - name: Liz Ampt
   pic: placeholder
-  position: Co-Chair
+  committee_role: Co-Chair
+  position: Concepts of Change
   email: lizampt@conceptsofchange.com.au
-  url: "#"
-  social:
+  url:
 
 - name: Durba Kundu
   pic: placeholder
-  position: Secretary
-  url: "#"
-  social:
+  committee_role: Secretary
+  position:
+  url:
 
 - name: Justine Smith
-  pic: placeholder
-  position: Research Coordinator
-  url: "#"
-  social:
+  pic: JustineSmith
+  image_ext: png
+  committee_role: Research Coordinator
+  position: WA Department of Transport and Major Infrastructure
+  url: https://www.linkedin.com/in/justine-smith-b65466a0/
 
 - name: Yuting Zhang
-  pic: placeholder
-  position: Research Coordinator
-  url: "#"
-  social:
+  pic: YutingZhang
+  committee_role: Research Coordinator
+  position: Institute of Transport and Logistics Studies, The University of Sydney
+  url: https://profiles.sydney.edu.au/yuting.zhang
 
 - name: Alex Iljin
   pic: placeholder
-  position: Events Coordinator
-  url: "#"
-  social:
+  committee_role: Events Coordinator
+  position:
+  url:
 
 - name: Leonie Gibbons
   pic: placeholder
-  position: Events Coordinator
-  url: "#"
-  social:
+  committee_role: Events Coordinator
+  position:
+  url:

@@ -16,7 +16,7 @@ There are two ways to update the site:
 
 ### Adding your headshot
 
-1. Save your photo as a JPG. A square crop, around 400×400 pixels, looks best. Name it after yourself in lower-case with hyphens — e.g. `jane-smith.jpg`.
+1. Save your photo as a square JPG or PNG, around 400×400 pixels. Name it after yourself in lower-case with hyphens — e.g. `jane-smith.jpg` or `jane-smith.png`.
 2. In GitHub, open the [img/team/](img/team/) folder and use **Add file → Upload files** to upload your photo there.
 3. Open [_data/people.yml](_data/people.yml) and find your entry. It will currently look like this:
 
@@ -26,13 +26,26 @@ There are two ways to update the site:
      position: member
    ```
 
-   Edit the `pic:` line so it matches the filename you uploaded, **without** the `.jpg` extension:
+   Edit the `pic:` line so it matches the filename you uploaded, **without** the extension:
 
    ```yaml
    - name: Jane Smith
      pic: jane-smith
      position: member
    ```
+
+   If you uploaded a PNG, also add `image_ext: png`. JPG is the default, so you only need `image_ext:` for non-JPG headshots:
+
+   ```yaml
+   - name: Jane Smith
+     pic: jane-smith
+     image_ext: png
+     position: member
+   ```
+
+You can also optionally add contact links on the Team page with `email:` and `url:` fields, for example `url: https://www.linkedin.com/in/jane-smith/`.
+
+Leadership entries in [_data/leadership.yml](_data/leadership.yml) support a separate `committee_role:` field for the person's role within the Behavioural Insights Group, while `position:` can be used for their job title and organisation.
 
 4. Commit the change (GitHub will prompt you with a "Commit changes" button). The site rebuilds automatically and your headshot should appear on the Team page within a couple of minutes.
 

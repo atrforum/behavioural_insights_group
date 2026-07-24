@@ -4,14 +4,32 @@
   <h3>Leadership</h3>
   <ul class="team-grid">
     {% for m in site.data.leadership %}
+      {% assign image_ext = m.image_ext | default: 'jpg' %}
       <li class="team-grid__item">
-        <img src="{{ '/img/team/' | append: m.pic | append: '.jpg' | relative_url }}" alt="{{ m.name }}">
+        <img src="{{ '/img/team/' | append: m.pic | append: '.' | append: image_ext | relative_url }}" alt="{{ m.name }}">
         <div class="team-grid__name">{{ m.name }}</div>
-        <div class="team-grid__role">{{ m.position }}</div>
-        {% if m.email %}
-          <a class="team-grid__email" href="mailto:{{ m.email }}" aria-label="Email {{ m.name }}">
-            <i class="fas fa-envelope" aria-hidden="true"></i>
-          </a>
+        <div class="team-grid__role">{{ m.committee_role | default: m.position }}</div>
+        {% if m.committee_role and m.position %}
+          <div class="team-grid__meta">{{ m.position }}</div>
+        {% endif %}
+        {% assign has_profile_url = m.url and m.url != '' and m.url != '#' %}
+        {% if m.email or has_profile_url %}
+          <div class="team-grid__links">
+            {% if m.email %}
+              <a class="team-grid__link" href="mailto:{{ m.email }}" aria-label="Email {{ m.name }}">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+              </a>
+            {% endif %}
+            {% if has_profile_url %}
+              <a class="team-grid__link" href="{{ m.url }}" aria-label="Visit {{ m.name }}'s website or LinkedIn profile">
+                {% if m.url contains 'linkedin.com' %}
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+                {% else %}
+                  <i class="fas fa-link" aria-hidden="true"></i>
+                {% endif %}
+              </a>
+            {% endif %}
+          </div>
         {% endif %}
       </li>
     {% endfor %}
@@ -20,14 +38,29 @@
   <h3>Committee members</h3>
   <ul class="team-grid">
     {% for m in site.data.people %}
+      {% assign image_ext = m.image_ext | default: 'jpg' %}
       <li class="team-grid__item">
-        <img src="{{ '/img/team/' | append: m.pic | append: '.jpg' | relative_url }}" alt="{{ m.name }}">
+        <img src="{{ '/img/team/' | append: m.pic | append: '.' | append: image_ext | relative_url }}" alt="{{ m.name }}">
         <div class="team-grid__name">{{ m.name }}</div>
         <div class="team-grid__role">{{ m.position }}</div>
-        {% if m.email %}
-          <a class="team-grid__email" href="mailto:{{ m.email }}" aria-label="Email {{ m.name }}">
-            <i class="fas fa-envelope" aria-hidden="true"></i>
-          </a>
+        {% assign has_profile_url = m.url and m.url != '' and m.url != '#' %}
+        {% if m.email or has_profile_url %}
+          <div class="team-grid__links">
+            {% if m.email %}
+              <a class="team-grid__link" href="mailto:{{ m.email }}" aria-label="Email {{ m.name }}">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+              </a>
+            {% endif %}
+            {% if has_profile_url %}
+              <a class="team-grid__link" href="{{ m.url }}" aria-label="Visit {{ m.name }}'s website or LinkedIn profile">
+                {% if m.url contains 'linkedin.com' %}
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+                {% else %}
+                  <i class="fas fa-link" aria-hidden="true"></i>
+                {% endif %}
+              </a>
+            {% endif %}
+          </div>
         {% endif %}
       </li>
     {% endfor %}
@@ -57,17 +90,27 @@
   }
   .team-grid__name { font-weight: 600; }
   .team-grid__role { opacity: 0.7; font-size: 0.9em; }
-  .team-grid__email {
+  .team-grid__meta {
+    margin-top: 0.2em;
+    font-size: 0.85em;
+    line-height: 1.35;
+  }
+  .team-grid__links {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    margin-top: 0.45em;
+  }
+  .team-grid__link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0.45em;
     color: inherit;
     font-size: 1rem;
     text-decoration: none;
   }
-  .team-grid__email:hover,
-  .team-grid__email:focus {
+  .team-grid__link:hover,
+  .team-grid__link:focus {
     color: #0e4c8c;
   }
 </style>
