@@ -1,89 +1,111 @@
 - name: Abhishek Sanjeev Gavande
   pic: placeholder
-  position: member
+  position:
+  url:
 
 - name: Adri van der Mescht
   pic: placeholder
-  position: member
+  position:
+  url:
 
-- name: Akshay Vij
-  pic: placeholder
-  position: member
+# - name: Akshay Vij
+#   pic: placeholder
+#   position:
+#   url:
 
 - name: Andrew Allan
   pic: placeholder
-  position: member
+  position:
+  url:
 
 - name: Anna Sunter
   pic: placeholder
-  position: member
+  position:
+  url:
 
 - name: Ashikur Rahman
   pic: placeholder
-  position: member
+  position:
+  url:
 
 - name: Ben Kent
   pic: placeholder
-  position: member
+  position:
+  url:
 
 - name: Ben Kraal
   pic: placeholder
-  position: member
+  position:
+  url:
 
 - name: Elizabeth Claridge
   pic: placeholder
-  position: member
+  position:
+  url:
 
-- name: Emily Moylan
-  pic: placeholder
-  position: member
+# - name: Emily Moylan
+#   pic: placeholder
+#   position:
+#   url:
 
 - name: Hormoz Marzbani
   pic: placeholder
-  position: member
+  position:
+  url:
 
 - name: James Edwards
   pic: placeholder
-  position: member
+  position:
+  url:
 
 - name: Jan Zill
-  pic: placeholder
-  position: website coordinator
+  pic: JanZill
+  position: Outer Loop Consulting
   email: jan@outerloop.io
+  url: https://www.outerloop.io/team
 
 - name: Louise Baker
   pic: placeholder
-  position: member
+  position:
+  url:
 
 - name: Mark Davis
   pic: placeholder
-  position: member
+  position:
+  url:
 
 - name: Patricia Sauri Lavieri
   pic: placeholder
-  position: member
+  position:
+  url:
 
 - name: Sam Taylor
   pic: placeholder
-  position: member
+  position:
+  url:
 
 - name: Stephen Greaves
   pic: placeholder
-  position: member
+  position:
+  url:
 
-- name: Taha Rashidi
-  pic: placeholder
-  position: member
+# - name: Taha Rashidi
+#   pic: placeholder
+#   position:
+#   url:
 
 - name: Tony Brennand
   pic: placeholder
-  position: member
+  position:
+  url:
 
 - name: Virginie Vernin
   pic: placeholder
-  position: member
+  position:
+  url:
 
 
 # - name: Lindsay Oxlad
 #   pic: placeholder
 #   position: member
+#   url:
