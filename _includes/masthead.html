@@ -9,10 +9,24 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <a class="site-logo site-logo--multi" href="{{ '/' | relative_url }}">
-          <img src="{{ '/img/logo_2.png' | relative_url }}" alt="ATRF Committee for Behavioural Insights" class="site-logo__img site-logo__img--big">
+          {%- comment -%}
+            width/height are the images' intrinsic pixel sizes. They give the browser
+            an aspect ratio before the files load, so greedy-nav's width measurement
+            (which runs on DOM ready) sees the real logo width rather than zero.
+          {%- endcomment -%}
+          <img src="{{ '/img/logo_2.png' | relative_url }}" alt="ATRF Committee for Behavioural Insights" class="site-logo__img site-logo__img--big" width="596" height="264">
           <span class="site-logo__sep" aria-hidden="true"></span>
-          <img src="{{ '/img/ATRF_logo_large.png' | relative_url }}" alt="Australasian Transport Research Forum" class="site-logo__img site-logo__img--atrf">
+          <img src="{{ '/img/ATRF_logo_large.png' | relative_url }}" alt="Australasian Transport Research Forum" class="site-logo__img site-logo__img--atrf" width="1004" height="246">
         </a>
+
+        {%- comment -%}
+          greedy-nav.js subtracts `.site-title`'s width from the space available to the
+          links. jQuery returns `undefined` for an element that isn't in the DOM, which
+          makes that arithmetic NaN and stops the script collapsing links into the
+          hamburger menu. This empty placeholder (hidden in main.scss) keeps the maths
+          valid without rendering a title next to the logos.
+        {%- endcomment -%}
+        <span class="site-title" aria-hidden="true"></span>
 
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}

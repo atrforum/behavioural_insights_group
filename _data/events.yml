@@ -1,19 +1,27 @@
 upcoming:
-  - name: 47th ATRF
+  - name: CBI Monthly Meeting (August)
+    location: Online (Teams)
+    date: 2 September 2026
+    url: "#"
+
+  - name: 47th ATRF Conference
     location: Sydney
     date: 24-26 Nov 2026
     url: https://atrf2026.org/
 
-  - name: CBI Monthly Meeting (August)
-    location: Online (Teams)
-    date: 5 August 2026
-    url: "#"
 
 past:
+  - name: Beyond Time and Cost - Parenting, Culture and the Social Practices of Car Use
+    url: "#"
+    description: "Jennifer Kent (University of Sydney) presented her research on why people travel the way they do drawing on Social Practice Theory. Hosted by the ATRF Behavioural Insights Group on 5 August 2026."
+    slides: /assets/presentations/Jen_Kent_Aug2026.pdf
+    video: https://youtu.be/Woxlyy5AbPA
+
   - name: Behavioural insights in transport - informing, testing and generating practical evidence
     url: "#"
     description: "Bowen Fung (Behavioural Insights Team) presented on how behavioural insight perspectives can be used to identify drivers of behaviour and inform targeted interventions in transport-related projects. Hosted by the ATRF Behavioural Insights Group on 3 June 2026."
     slides: /assets/presentations/ATRF_BI_Talk_2026.pdf
+    video: https://www.youtube.com/watch?v=26tLuwQ5ONI
 
   - name: Qualitative Research Methods to Generate Behavioural Insights
     url: "#"

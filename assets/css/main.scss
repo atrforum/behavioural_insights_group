@@ -158,6 +158,42 @@ body::before {
   .site-logo.site-logo--multi { gap: 8px; margin-right: 12px; }
 }
 
+// Small phones: shrink once more so the two logos plus the hamburger always
+// clear the viewport with room to spare.
+@media (max-width: 400px) {
+  .site-logo__img { height: 26px; }
+  .site-logo.site-logo--multi { gap: 6px; margin-right: 8px; }
+}
+
+/* greedy-nav.js measures `.site-title` to work out how much room the links have.
+   The masthead override renders an empty placeholder so that measurement returns
+   0 instead of NaN; hide it so it never occupies space next to the logos. */
+.greedy-nav .site-title {
+  display: none;
+}
+
+/* The overflow menu only appears now that greedy-nav collapses links correctly.
+   The contrast skin draws the navicon in red — re-tint it to match the brand. */
+.greedy-nav__toggle {
+  .navicon,
+  .navicon:before,
+  .navicon:after { background: $atrf-blue; }
+
+  &:hover {
+    .navicon,
+    .navicon:before,
+    .navicon:after { background: $atrf-blue-dark; }
+  }
+
+  &:hover.close .navicon { background: transparent; }
+}
+
+// The skin's grey hover reads muddy under blue link text.
+.greedy-nav .hidden-links a:hover {
+  color: $atrf-blue;
+  background: $atrf-blue-soft;
+}
+
 /* ============================================================
    Drop the white card around the CBI logo.
    Both logos are now dark-on-light and sit on the air skin's white masthead. */
@@ -170,4 +206,29 @@ body::before {
 
 @media (max-width: 600px) {
   .site-logo__sep { height: 20px; }
+}
+
+
+/* ============================================================
+   Responsive video embeds (past-event recordings)
+   ============================================================ */
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0.75em 0 0.25em;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 4px;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
 }

@@ -84,9 +84,12 @@ past:
     url: "#"
     description: "Speaker Name (Affiliation) presented on <topic>. Hosted by the ATRF Committee for Behavioural Insights on <date>."
     slides: /assets/presentations/speaker-name-talk-title.pdf   # optional — leave the line out if no slides
+    video: https://www.youtube.com/watch?v=XXXXXXXXXXX          # optional — leave the line out if there's no recording
 ```
 
 If you're attaching slides, upload the PDF to [assets/presentations/](assets/presentations/) first (same **Add file → Upload files** flow as for headshots), then reference the filename in the `slides:` line.
+
+If there's a recording, paste the YouTube link into the `video:` line and it will appear as an embedded player under the description. Unlisted videos work — they just need to be set to *Unlisted* rather than *Private*, since Private videos can't be embedded. A `https://youtu.be/...` short link or a bare video ID works too.
 
 When an upcoming event has happened, simply move the entry from the `upcoming:` list down to the `past:` list and add a `description:` line.
 
@@ -114,12 +117,14 @@ When an upcoming event has happened, simply move the entry from the `upcoming:` 
 ### Local preview
 
 ```
-bundle config set --local path vendor/bundle  # needed on some Linux setups to avoid system gem permission errors
 bundle install
 bundle exec jekyll serve
 ```
 
 Then open http://localhost:4000/behavioural_insights_group/ (note the `baseurl` — the bare `http://localhost:4000/` will 404).
+
+Note on some linux systems you might need to run `bundle config set --local path vendor/bundle` before the `bundle install` to avoid system gem permission errors.
+
 
 ### Deployment
 
