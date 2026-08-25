@@ -114,12 +114,14 @@ When an upcoming event has happened, simply move the entry from the `upcoming:` 
 ### Local preview
 
 ```
-bundle config set --local path vendor/bundle  # needed on some Linux setups to avoid system gem permission errors
 bundle install
 bundle exec jekyll serve
 ```
 
 Then open http://localhost:4000/behavioural_insights_group/ (note the `baseurl` — the bare `http://localhost:4000/` will 404).
+
+Note on some linux systems you might need to run `bundle config set --local path vendor/bundle` before the `bundle install` to avoid system gem permission errors.
+
 
 ### Deployment
 
