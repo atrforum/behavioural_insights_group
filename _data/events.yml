@@ -1,7 +1,12 @@
 upcoming:
-  - name: ATRF-BI Monthly Meeting (August)
+  - name: ATRF-BI webinar
     location: Online (Teams)
-    date: 2 September 2026
+    date: 7 October 2026
+    url: "#"
+
+  - name: ATRF-BI Monthly Meeting (November)
+    location: Online (Teams)
+    date: 2 November 2026
     url: "#"
 
   - name: 47th ATRF Conference
