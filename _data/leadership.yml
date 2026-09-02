@@ -13,10 +13,12 @@
   url:
 
 - name: Durba Kundu
-  pic: placeholder
+  pic: DurbaKundu
+  image_ext: png
   committee_role: Secretary
-  position:
-  url:
+  position: Queensland University of Technology
+  email: durbakundu.ce@gmail.com
+  url: https://www.linkedin.com/in/durba-kundu-404655146/
 
 - name: Justine Smith
   pic: JustineSmith
