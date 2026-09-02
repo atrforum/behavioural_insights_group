@@ -1,7 +1,7 @@
-ATRF Committee for Behavioural Insights (CBI)
+ATRF Behavioural Insights Committee (ATRF-BI)
 =============================================
 
-Source for the website of the Committee for Behavioural Insights, a standing group of the
+Source for the website of the Behavioural Insights Committee, a standing group of the
 [Australasian Transport Research Forum (ATRF)](https://australasiantransportresearchforum.org.au/).
 
 
@@ -45,7 +45,7 @@ There are two ways to update the site:
 
 You can also optionally add contact links on the Team page with `email:` and `url:` fields, for example `url: https://www.linkedin.com/in/jane-smith/`.
 
-Leadership entries in [_data/leadership.yml](_data/leadership.yml) support a separate `committee_role:` field for the person's role within the Behavioural Insights Group, while `position:` can be used for their job title and organisation.
+Leadership entries in [_data/leadership.yml](_data/leadership.yml) support a separate `committee_role:` field for the person's role within the Behavioural Insights Committee, while `position:` can be used for their job title and organisation.
 
 4. Commit the change (GitHub will prompt you with a "Commit changes" button). The site rebuilds automatically and your headshot should appear on the Team page within a couple of minutes.
 
@@ -70,7 +70,7 @@ Events live in [_data/events.yml](_data/events.yml), split into two lists: `upco
 
 ```yaml
 upcoming:
-  - name: CBI Monthly Meeting (July) — Guest speaker TBC
+  - name: ATRF-BI Monthly Meeting (July) — Guest speaker TBC
     location: Online (Teams)
     date: July 2026 (TBC)
     url: "#"
@@ -82,7 +82,7 @@ upcoming:
 past:
   - name: Title of the talk
     url: "#"
-    description: "Speaker Name (Affiliation) presented on <topic>. Hosted by the ATRF Committee for Behavioural Insights on <date>."
+    description: "Speaker Name (Affiliation) presented on <topic>. Hosted by the ATRF Behavioural Insights Committee on <date>."
     slides: /assets/presentations/speaker-name-talk-title.pdf   # optional — leave the line out if no slides
     video: https://www.youtube.com/watch?v=XXXXXXXXXXX          # optional — leave the line out if there's no recording
 ```
@@ -109,7 +109,7 @@ When an upcoming event has happened, simply move the entry from the `upcoming:` 
 | [_data/](_data/) | Structured content driving the page sections — `people.yml`, `leadership.yml`, `events.yml`, `resources.yml`, `research_needs.yml`, `navigation.yml`. Editing these is the day-to-day way the site changes. |
 | [index.md](index.md) | The single landing page. Front matter sets the splash hero; the body just `{% include %}`s the section partials in display order. |
 | [_includes/sections/](_includes/sections/) | One HTML partial per page section (`about`, `research-needs`, `resources`, `events`, `team`). These are local — they're not part of Minimal Mistakes. |
-| [_includes/masthead.html](_includes/masthead.html), [_includes/head/custom.html](_includes/head/custom.html) | **Local overrides** of theme partials. Jekyll picks the local copy over the remote-theme copy for any same-named file under `_includes/`. The masthead override exists for the dual-logo (CBI + ATRF) layout; `head/custom.html` is MM's intentional extension point for favicons/meta tags. |
+| [_includes/masthead.html](_includes/masthead.html), [_includes/head/custom.html](_includes/head/custom.html) | **Local overrides** of theme partials. Jekyll picks the local copy over the remote-theme copy for any same-named file under `_includes/`. The masthead override exists for the dual-logo (ATRF-BI + ATRF) layout; `head/custom.html` is MM's intentional extension point for favicons/meta tags. |
 | [assets/css/main.scss](assets/css/main.scss) | The site's compiled stylesheet. Imports the theme's skin and base styles, then layers our brand-colour and component overrides on top. Has front matter (so Jekyll runs it through Liquid + Sass). |
 | [img/team/](img/team/) | Headshot JPGs. Filenames must match the `pic:` field in `_data/people.yml` / `_data/leadership.yml` (without the extension). `placeholder.jpg` is the default. |
 | [assets/presentations/](assets/presentations/) | Slide PDFs referenced from past-event entries in `_data/events.yml`. |

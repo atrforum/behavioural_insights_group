@@ -1,7 +1,12 @@
 upcoming:
-  - name: CBI Monthly Meeting (August)
+  - name: ATRF-BI webinar
     location: Online (Teams)
-    date: 2 September 2026
+    date: 7 October 2026
+    url: "#"
+
+  - name: ATRF-BI Monthly Meeting (November)
+    location: Online (Teams)
+    date: 2 November 2026
     url: "#"
 
   - name: 47th ATRF Conference
@@ -13,26 +18,26 @@ upcoming:
 past:
   - name: Beyond Time and Cost - Parenting, Culture and the Social Practices of Car Use
     url: "#"
-    description: "Jennifer Kent (University of Sydney) presented her research on why people travel the way they do drawing on Social Practice Theory. Hosted by the ATRF Behavioural Insights Group on 5 August 2026."
+    description: "Jennifer Kent (University of Sydney) presented her research on why people travel the way they do drawing on Social Practice Theory. Hosted by the ATRF Behavioural Insights Committee on 5 August 2026."
     slides: /assets/presentations/Jen_Kent_Aug2026.pdf
     video: https://youtu.be/Woxlyy5AbPA
 
   - name: Behavioural insights in transport - informing, testing and generating practical evidence
     url: "#"
-    description: "Bowen Fung (Behavioural Insights Team) presented on how behavioural insight perspectives can be used to identify drivers of behaviour and inform targeted interventions in transport-related projects. Hosted by the ATRF Behavioural Insights Group on 3 June 2026."
+    description: "Bowen Fung (Behavioural Insights Team) presented on how behavioural insight perspectives can be used to identify drivers of behaviour and inform targeted interventions in transport-related projects. Hosted by the ATRF Behavioural Insights Committee on 3 June 2026."
     slides: /assets/presentations/ATRF_BI_Talk_2026.pdf
     video: https://www.youtube.com/watch?v=26tLuwQ5ONI
 
   - name: Qualitative Research Methods to Generate Behavioural Insights
     url: "#"
-    description: "Ben Kraal (HCL, formerly Simplicit) presented on the use of qualitative research methods to generate behavioural insights. Hosted by the ATRF Behavioural Insights Group on 6 May 2026."
+    description: "Ben Kraal (HCL, formerly Simplicit) presented on the use of qualitative research methods to generate behavioural insights. Hosted by the ATRF Behavioural Insights Committee on 6 May 2026."
 
   - name: Behavioural Change Initiatives at RAC — Community Impact
     url: "#"
-    description: "Ben Kent (RAC WA) presented on behavioural change initiatives being implemented by RAC. Hosted by the ATRF Behavioural Insights Group on 1 April 2026."
+    description: "Ben Kent (RAC WA) presented on behavioural change initiatives being implemented by RAC. Hosted by the ATRF Behavioural Insights Committee on 1 April 2026."
     slides: /assets/presentations/ben-kent-rac-community-impact.pdf
 
   - name: Behavioural Insights for Transport
     url: "#"
-    description: "Dr Kavya Raj (BehaviourWorks Australia, Monash University) presented an introduction to behavioural insights for transport, covering the COM-B model of behaviour and a case study. Hosted by the ATRF Behavioural Insights Group in February 2026."
+    description: "Dr Kavya Raj (BehaviourWorks Australia, Monash University) presented an introduction to behavioural insights for transport, covering the COM-B model of behaviour and a case study. Hosted by the ATRF Behavioural Insights Committee in February 2026."
     slides: /assets/presentations/kavya-raj-behavioural-insights-for-transport.pdf

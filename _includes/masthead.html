@@ -1,5 +1,5 @@
 {%- comment -%}
-  Local override of MM's masthead to render two logos (CBI + ATRF) on the left
+  Local override of MM's masthead to render two logos (ATRF-BI + ATRF) on the left
   instead of the default text title or single site.logo.
 {%- endcomment -%}
 
@@ -14,7 +14,7 @@
             an aspect ratio before the files load, so greedy-nav's width measurement
             (which runs on DOM ready) sees the real logo width rather than zero.
           {%- endcomment -%}
-          <img src="{{ '/img/logo_2.png' | relative_url }}" alt="ATRF Committee for Behavioural Insights" class="site-logo__img site-logo__img--big" width="596" height="264">
+          <img src="{{ '/img/logo_2.png' | relative_url }}" alt="ATRF Behavioural Insights Committee" class="site-logo__img site-logo__img--big" width="596" height="264">
           <span class="site-logo__sep" aria-hidden="true"></span>
           <img src="{{ '/img/ATRF_logo_large.png' | relative_url }}" alt="Australasian Transport Research Forum" class="site-logo__img site-logo__img--atrf" width="1004" height="246">
         </a>

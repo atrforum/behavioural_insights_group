@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /
-title: "ATRF Behavioural Insights Group"
+title: "ATRF Behavioural Insights Committee"
 header:
   overlay_color: "#0e4c8c"  # ATRF blue (sampled from the ATRF logo)
   # overlay_image: /img/hero.jpg   # TODO: drop a hero image here when ready
@@ -10,6 +10,8 @@ header:
       url: "https://australasiantransportresearchforum.org.au/become-a-member/"
     - label: "Past Presentations"
       url: "#events"
+    - label: "<i class='fab fa-linkedin'></i> LinkedIn Group"
+      url: "https://www.linkedin.com/groups/18327006"
   caption: "A standing group of the Australasian Transport Research Forum"
 excerpt: "Promoting and improving the quality of behavioural insights research in Australia and New Zealand."
 ---
