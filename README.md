@@ -121,7 +121,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Then open http://localhost:4000/behavioural_insights_group/ (note the `baseurl` — the bare `http://localhost:4000/` will 404).
+Then open http://localhost:4000/
 
 Note on some linux systems you might need to run `bundle config set --local path vendor/bundle` before the `bundle install` to avoid system gem permission errors.
 
