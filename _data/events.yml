@@ -1,21 +1,27 @@
 upcoming:
-  - name: ATRF-BI webinar
-    location: Online (Teams)
-    date: 7 October 2026
-    url: "#"
-
-  - name: ATRF-BI Monthly Meeting (November)
-    location: Online (Teams)
-    date: 2 November 2026
-    url: "#"
-
   - name: 47th ATRF Conference
     location: Sydney
     date: 24-26 Nov 2026
     url: https://atrf2026.org/
 
+  - name: ATRF-BI Monthly Meeting (December)
+    location: Online (Teams)
+    date: 3 December 2026
+    url: "#"
+
 
 past:
+  - name: ATRF-BI Monthly Meeting (November)
+    url: "#"
+    description: "Recording of the regular monthly group meeting of the ATRF Behavioural Insights Committee, held on 4 November 2026."
+    video: https://youtu.be/Sit1HiuL3hQ
+
+  - name: From Measuring Travel Behaviour to Measuring Change Potential - Integrating Behavioural Insights into Household Travel Surveys
+    url: "#"
+    description: "Adri van der Mescht (Ipsos) and Liz Ampt (Concepts of Change) presented on integrating behavioural insights into household travel surveys, including adding behavioural-change potential to the ACT Household Travel Survey. Hosted by the ATRF Behavioural Insights Committee as a webinar on 7 October 2026."
+    slides: /assets/presentations/ipsos-change-potential-travel-surveys.pdf
+    video: https://youtu.be/_vD6DnASpd8
+
   - name: Beyond Time and Cost - Parenting, Culture and the Social Practices of Car Use
     url: "#"
     description: "Jennifer Kent (University of Sydney) presented her research on why people travel the way they do drawing on Social Practice Theory. Hosted by the ATRF Behavioural Insights Committee on 5 August 2026."
